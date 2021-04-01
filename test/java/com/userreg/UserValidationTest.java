@@ -28,7 +28,14 @@ public class UserValidationTest {
         boolean result=validator.validateEmail("sweetylenka2013@gmail.com");
         Assertions.assertEquals(true,result);
     }
-    
+    @Test
+    public void isMobileValid()
+    {
+        UserValidator validator = new UserValidator();
+        boolean result=validator.validateMobile("91 1234567890");
+        Assertions.assertEquals(true,result);
+    }
+
 
 
 
