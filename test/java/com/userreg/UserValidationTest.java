@@ -13,7 +13,15 @@ public class UserValidationTest {
         Assertions.assertEquals(true,result);
 
     }
-    
+    @Test
+    public void isLastNameValid()
+    {
+        UserValidator validator = new UserValidator();
+        boolean result=validator.validateLastName("Das");
+        Assertions.assertEquals(true,result);
+
+    }
+
 
 
 }
