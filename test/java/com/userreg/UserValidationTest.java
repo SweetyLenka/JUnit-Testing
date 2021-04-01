@@ -21,6 +21,15 @@ public class UserValidationTest {
         Assertions.assertEquals(true,result);
 
     }
+    @Test
+    public void isEmailValid()
+    {
+        UserValidator validator = new UserValidator();
+        boolean result=validator.validateEmail("sweetylenka2013@gmail.com");
+        Assertions.assertEquals(true,result);
+    }
+    
+
 
 
 
